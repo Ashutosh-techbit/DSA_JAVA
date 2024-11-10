@@ -1,3 +1,7 @@
+//finding maximum sum of an subarray using bruteforce appraoch 
+// TC = O(n^3)
+
+
 public class MaxSubarraySum1 {
 
     public static int maxsum(int nums[]){
