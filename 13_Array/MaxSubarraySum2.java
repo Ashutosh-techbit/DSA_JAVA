@@ -10,7 +10,7 @@ public class MaxSubarraySum2 {
         //intialze array
         int prefix[] = new int[nums.length];
         
-        // array declaration
+        // array vlaue declaration
         prefix[0]=nums[0];
         for(int i=1;i<nums.length;i++){
            prefix[i]=prefix[i-1]+nums[i]; 
