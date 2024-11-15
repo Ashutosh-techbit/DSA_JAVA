@@ -28,13 +28,17 @@ public class spiralMatrix {
             System.out.println();
             
             //left
-            for(int i=maxrow-1;i>=minrow;i--)
+            for(int i=maxrow-1;i>=minrow+1;i--)
             {
                 System.out.print(nums[i][mincol] + " ");
             }
             System.out.println();
-
-         }
+            
+            minrow++;
+            mincol++;
+            maxcol--;
+            maxrow--;
+         }  
     }
 
     public static void main(String[] args) {
