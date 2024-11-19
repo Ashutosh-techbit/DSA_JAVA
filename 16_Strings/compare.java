@@ -21,5 +21,13 @@ public class compare {
         else{
             System.out.println("not equals");
         }
+
+        //to compare only values use equals
+        if(s1.equals(s3)){
+            System.out.println("true");
+        }
+        else{
+            System.out.println("false");
+        }
     }
 }
