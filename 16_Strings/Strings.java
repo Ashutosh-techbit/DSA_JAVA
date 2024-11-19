@@ -27,8 +27,11 @@ public class Strings {
        String firstname = "ashu";
        String Lastname = "bansal";
        String fullname = firstname+" " + Lastname;
-       System.out.println(fullname);
+       //System.out.println(fullname); //ashu bansal
+
+      System.out.println(fullname.charAt(3));
        
+
 
 
     }    
