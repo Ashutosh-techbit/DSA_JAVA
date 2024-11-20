@@ -8,6 +8,7 @@ public class compare {
         //using new keyword a new string is created
         String s3  =  new String("ashu");
 
+        //== compares both value and object
         if(s1==s2){
             System.out.println("print equals");
         }

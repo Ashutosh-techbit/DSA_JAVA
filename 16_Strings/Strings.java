@@ -19,17 +19,27 @@ public class Strings {
         // System.out.print(name1); //ashu bansal
 
 
-        //in-built function
+        //=================in-built function=================
         // String str = "ashu";
         // System.out.println(str.length());
       
-        //Concatenation
+        //==============Concatenation===================
        String firstname = "ashu";
        String Lastname = "bansal";
        String fullname = firstname+" " + Lastname;
        //System.out.println(fullname); //ashu bansal
 
-      System.out.println(fullname.charAt(3));
+    //   System.out.println(fullname.charAt(3));
+
+
+      //=============String Builder=========\
+      StringBuilder sb = new StringBuilder("");
+      for(char ch='a';ch<='z';ch++){
+           sb.append(ch);
+      }
+      //O(26)
+      System.out.println(sb);
+
        
 
 
