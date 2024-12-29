@@ -4,7 +4,6 @@ public class fastExponentiation {
         while(power>0){
             if((power&1)!=0){
                 ans=ans*n;
-
             }
             n=n*n;
            power = power>>1;
