@@ -1,3 +1,4 @@
+package easy;
 public class binarySearch {
     public static int binsearch(int arr[] , int target , int start ,  int end){
         if(start>end){
