@@ -1,4 +1,3 @@
-package easy;
 public class factorial {
 
     public static int fact(int x){

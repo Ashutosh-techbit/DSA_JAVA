@@ -1,4 +1,3 @@
-package easy;
 public class productofdigits {
     public static int prod(int x){
         if(x%10==x){

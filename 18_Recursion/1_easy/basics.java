@@ -1,4 +1,3 @@
-package easy;
 public class basics{
    
     //recursion 

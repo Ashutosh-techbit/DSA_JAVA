@@ -1,4 +1,3 @@
-package easy;
 public class sumofdigits {
     public static int sum(int x){
         if(x<1){
