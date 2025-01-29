@@ -1,4 +1,4 @@
-import java.util.*;;
+import java.util.*;
 
 public class ReverseArray {
     public static void reverse(int nums[]){
@@ -21,4 +21,4 @@ public class ReverseArray {
         }
 
     }
-}
+}ff
