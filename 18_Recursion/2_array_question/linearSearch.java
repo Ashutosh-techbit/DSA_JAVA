@@ -35,13 +35,30 @@ public class linearSearch {
         if (index == arr.length) {
             return list;
         }
-
+        
         if (arr[index] == target) {
             list.add(index);
-         }
+        }
         return findallindex(arr, target, index + 1,list);
+    }
+    
+    
+    // returns index of multiple occurence of element if exists by creating new list at every recursion call
+    public static ArrayList<Integer> findallindex2(int[] arr, int target, int index ) {
+
+        ArrayList<Integer> list2 = new ArrayList<>();
+
+        if (index == arr.length) {
+            return list2;
+        }
         
-        
+        //this will contain answer for that function call only
+        if (arr[index] == target) {
+            list2.add(index);
+         }
+         ArrayList<Integer> ansfromBelowCall = findallindex2(arr, target, index+1);
+         list2.addAll(ansfromBelowCall);
+        return list2;
     }
 
     public static void main(String[] args) {
