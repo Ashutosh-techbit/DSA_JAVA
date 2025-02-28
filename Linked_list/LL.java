@@ -5,6 +5,7 @@ public class LL {
     private Node tail;
     private int size;
 
+    // size
     public LL(){
         this.size = 0;
     }
@@ -19,11 +20,8 @@ public class LL {
         if(tail==null){
             tail = head;
         }
-
         size += 1;
-
     }
-
 
     // insert node at end
     public void insertend(int value){
@@ -37,6 +35,27 @@ public class LL {
         size++;
     }
 
+    //insert at particular index
+    public void insertAtIndex(int value , int index){
+        if(head==null){
+            insertFirst(value);
+            return;
+        }
+        if(index==size){
+            insertend(value);
+            return;
+        }
+
+        Node temp = head;
+        for(int i=1;i<index;i++){
+            temp = temp.next;
+        }
+
+        Node node = new Node(value,temp.next);
+        temp.next=node;
+    }
+
+    //display whole linklist
     public void display(){
         Node temp = head;
         while(temp != null){

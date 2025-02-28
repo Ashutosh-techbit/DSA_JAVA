@@ -12,6 +12,7 @@ public class LLmain {
         list.insertFirst(18);
         list.insertFirst(19);
         list.insertend(99);
+        list.insertAtIndex(56,3);
 
         list.display();
     }
