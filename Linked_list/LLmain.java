@@ -15,5 +15,18 @@ public class LLmain {
         list.insertAtIndex(56,3);
 
         list.display();
+        System.out.println(list.deleteFirst());;
+        list.display();
+        
+       System.out.println( list.deletelast());
+        list.display();
+
+        System.out.println(list.delete(1));
+        list.display();
+
+        System.out.println(list.find(18));
+
+
+
     }
 }

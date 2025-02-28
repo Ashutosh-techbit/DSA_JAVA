@@ -10,12 +10,24 @@ public class LL {
         this.size = 0;
     }
 
+    public Node find(int value){
+        Node node = head;
+        while (node != null) {
+            if(node.value == value){
+                return node;
+            }
+            node = node.next;
+        }
+        return node;
+    }
+
+    // ======================== INSERTION ==============================
     //insert in begining
     public void insertFirst(int value){
         Node node = new Node(value);
         node.next = head;
         head = node; // now new node will be head
-
+        
         //no elements exsist before
         if(tail==null){
             tail = head;
@@ -53,8 +65,10 @@ public class LL {
 
         Node node = new Node(value,temp.next);
         temp.next=node;
+        size++;
     }
 
+    // ========================= DISPLAY =========================
     //display whole linklist
     public void display(){
         Node temp = head;
@@ -65,8 +79,61 @@ public class LL {
         System.out.println("END");
     }
 
+    // ======================== DELETE ==============================  
+    //delete first node
+    public int deleteFirst(){
+        int val = head.value;
+        head = head.next;
+
+        //if single element 
+        if(head==null){
+            tail = null;
+        }
+        size--;
+        return val;
+     }   
+
+    //get pointer to particular index
+    public Node get(int index){
+        Node node = head;
+        for(int i=0;i<index;i++){
+            node = node.next;
+        }
+        return node;
+    }
+
+    //delete last node
+    public int deletelast(){
+        if(size <= 1){
+            return deleteFirst();
+        }
+        Node secondlast = get(size-2);
+        int val = tail.value;
+        tail = secondlast;
+        tail.next = null;
+        return val;
+
+    }
+
+    //DELETE AT AN INDEX
+    public int delete(int index){
+        if(index == 0){
+           return deleteFirst();
+        }
+        if(index == size-1){
+            return deletelast();
+        }
+
+        Node prev = get(index-1);
+        int val = prev.next.value;
+        prev.next = prev.next.next;
+
+        return val;
+
+    }
+
+
     private class Node {
-    
         private int value;
         private Node next;
 
