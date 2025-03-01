@@ -4,11 +4,29 @@ public class LL {
     private Node head;
     private Node tail;
     private int size;
+    
+    // ===================== NODE OF SINGLE LINKED LIST ============================
+    private class Node {
+        private int value;
+        private Node next;
+
+        public Node(int value){
+            this.value = value;
+        }
+
+        public Node(int value,Node next){
+            this.value = value;
+            this.next  = next;
+        }
+        
+    }
 
     // size
     public LL(){
         this.size = 0;
     }
+
+    // ====================================== FIND ================================================
 
     public Node find(int value){
         Node node = head;
@@ -21,7 +39,7 @@ public class LL {
         return node;
     }
 
-    // ======================== INSERTION ==============================
+    // ===================================== INSERTION ==============================
     //insert in begining
     public void insertFirst(int value){
         Node node = new Node(value);
@@ -68,7 +86,7 @@ public class LL {
         size++;
     }
 
-    // ========================= DISPLAY =========================
+    // ============================ DISPLAY =======================================
     //display whole linklist
     public void display(){
         Node temp = head;
@@ -79,7 +97,7 @@ public class LL {
         System.out.println("END");
     }
 
-    // ======================== DELETE ==============================  
+    // ========================= DELETE =========================================  
     //delete first node
     public int deleteFirst(){
         int val = head.value;
@@ -133,18 +151,5 @@ public class LL {
     }
 
 
-    private class Node {
-        private int value;
-        private Node next;
-
-        public Node(int value){
-            this.value = value;
-        }
-
-        public Node(int value,Node next){
-            this.value = value;
-            this.next  = next;
-        }
-        
-    }
+   
 }

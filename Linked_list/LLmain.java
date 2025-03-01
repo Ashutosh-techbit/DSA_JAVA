@@ -14,17 +14,17 @@ public class LLmain {
         list.insertend(99);
         list.insertAtIndex(56,3);
 
-        list.display();
-        System.out.println(list.deleteFirst());;
-        list.display();
+    //     list.display();
+    //     System.out.println(list.deleteFirst());;
+    //     list.display();
         
-       System.out.println( list.deletelast());
+    //    System.out.println( list.deletelast());
+    //     list.display();
+
+    //     System.out.println(list.delete(1));
         list.display();
 
-        System.out.println(list.delete(1));
-        list.display();
-
-        System.out.println(list.find(18));
+   //     System.out.println(list.find(18));
 
 
 
