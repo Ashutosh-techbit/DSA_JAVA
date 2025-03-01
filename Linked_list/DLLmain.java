@@ -10,7 +10,10 @@ public class DLLmain {
         dlist.insertFirst(16); 
         dlist.insertFirst(17); 
 
+        dlist.insertFirst(10); 
+        dlist.insert(11, 10);
+
         dlist.display();
-        
+
     }
 }
